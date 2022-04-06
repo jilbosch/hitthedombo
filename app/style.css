@@ -1,3 +1,4 @@
+/*WRAPPER*/
 body,
 html {
     margin: 0;
@@ -48,7 +49,54 @@ html {
     display: inline-block;
     position: relative;
 }
-
+/*BOTONS*/
+.boto_central {
+    border: 1px solid #01f488;
+    padding: 10px 50px;
+    background-color: #01f488;
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+    text-transform:capitalize;
+    font-family:'Varela Round', sans-serif;
+    border-radius: 50px;
+    
+}
+.boto_central:hover {
+    border: 1px solid pink;
+    padding: 12px 55px;
+    background-color: pink;
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+    text-transform:capitalize;
+    font-family:'Varela Round', sans-serif;
+     border-radius: 50px; 
+}
+.boto_baix {
+    border: 1px solid #ffffff;
+    padding: 10px 30px;
+    background-color: #fbfbfb;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform:uppercase;
+    font-family:'Varela Round', sans-serif;
+    border-radius: 50px;
+}
+.boto_baix:hover {
+    border: 1px solid blue;
+    padding: 12px 33px;
+    background-color: blue ;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform:uppercase;
+    font-family:'Varela Round', sans-serif;
+    border-radius: 50px;
+}
+.temporal{
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+}
+/*IMG*/
 .bombo{
     position: absolute;
     top: 7em;
@@ -126,52 +174,6 @@ html {
     width: 120px;
     border-radius: 50%;
     background-color: black;
-}
-.boto_central {
-    border: 1px solid #01f488;
-    padding: 10px 50px;
-    background-color: #01f488;
-    color: rgb(255, 253, 253);
-    text-decoration: none;
-    text-transform:capitalize;
-    font-family:'Varela Round', sans-serif;
-    border-radius: 50px;
-    
-}
-.boto_central:hover {
-    border: 1px solid pink;
-    padding: 12px 55px;
-    background-color: pink;
-    color: rgb(255, 253, 253);
-    text-decoration: none;
-    text-transform:capitalize;
-    font-family:'Varela Round', sans-serif;
-     border-radius: 50px; 
-}
-.boto_baix {
-    border: 1px solid #ffffff;
-    padding: 10px 30px;
-    background-color: #fbfbfb;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-transform:uppercase;
-    font-family:'Varela Round', sans-serif;
-    border-radius: 50px;
-}
-.boto_baix:hover {
-    border: 1px solid blue;
-    padding: 12px 33px;
-    background-color: blue ;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-transform:uppercase;
-    font-family:'Varela Round', sans-serif;
-    border-radius: 50px;
-}
-.temporal{
-    position: absolute;
-    bottom: 0;
-    left: 50vw;
 }
 /*PROVA MEDIA QUERY*/
 @media only screen and (max-width: 600px) {

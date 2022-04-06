@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wrapper Hit the Dombo</title>
-    <link rel="stylesheet" href="wrapper.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,14 +15,36 @@
         <div class="text_container line">
             <h1 class="title no-format">Music for everyone.</h1>
             <h5 class="subtitle no-format">Millions of songs. No credit needed</h5>
-            <!--Insertar boto-->
+            <button class="boto_central">Hit the</button>
         </div>
         <div class="img_container line">
-            <!--Insertar imatge-->
+            <!--Insertar imatge (fet)-->
+            <div class="button-container">
+                <img src="../assets/drumkit.png" alt="bateria electronica">
+                <button type="button" class="bombo" onclick="bombo.play()"></button>
+
+                <button type="button" class="crash" onclick="crash.play()"></button>
+
+                <button type="button" class="hit-hat" onclick="hit.play()"></button>
+
+                <button type="button" class="redoblante" onclick="redoblante.play()"></button>
+
+                <button type="button" class="tom1" onclick="tom1.play()"></button>
+
+                <button type="button" class="tom2" onclick="tom2.play()"></button>
+
+                <button type="button" class="tom3" onclick="tom3.play()"></button>
+
+                <button type="button" class="tom4" onclick="tom4.play()"></button>
+            </div>
+        </div>
+        <!--Insertar footer-->
+        <!--Insertar boto baix-->
+        <div class="temporal">
+            <button class="boto_baix">SEE PRICING</button>
         </div>
     </div>
-    <!--Insertar footer-->
-    <script src="wrapper.js"></script>
+    <script src="app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">

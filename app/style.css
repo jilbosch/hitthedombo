@@ -32,13 +32,15 @@ html {
     padding-left: 5vw;
 }
 .title{
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     color: rgb(254, 254, 254);
     font-size: 50px;
     padding-right: 35%;
 }
 .subtitle{
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     color: rgb(79, 75, 105);
     margin: 3% 0%;
 }

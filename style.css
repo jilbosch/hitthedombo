@@ -1,4 +1,4 @@
-.button {
+.botocentral {
 border: 1px solid #01f488;
 padding: 10px 50px;
 background-color: #01f488;
@@ -9,7 +9,7 @@ font-family:'Varela Round', sans-serif;
 border-radius: 50px;
 
 }
-.button:hover {
+.botocentral:hover {
     border: 1px solid pink;
     padding: 12px 55px;
     background-color: pink;
@@ -20,7 +20,7 @@ border-radius: 50px;
     border-radius: 50px;
     
     }
-    .button2 {
+.botobaix {
         border: 1px solid #ffffff;
         padding: 10px 30px;
         background-color: #fbfbfb;
@@ -30,7 +30,7 @@ border-radius: 50px;
         font-family:'Varela Round', sans-serif;
         border-radius: 50px;
         }
-        .button2:hover {
+.botobaix:hover {
             border: 1px solid blue;
             padding: 12px 33px;
             background-color: blue ;

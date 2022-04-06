@@ -1,0 +1,84 @@
+.button-container{
+    display: inline-block;
+    position: relative;
+}
+
+.bombo{
+    position: absolute;
+    top: 7em;
+    left: 16.5em;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.crash{
+    position: absolute;
+    top: 7em;
+    right: 17em;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.hit-hat{
+    position: absolute;
+    bottom: 7.5em;
+    left: 9.5em;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.redoblante{
+    position: absolute;
+    bottom: 7.5em;
+    right: 9.5em;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.tom1{
+    position: absolute;
+    top: 2.5em;
+    left: 1em;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.tom2{
+    position: absolute;
+    top: 11.5em;
+    left: 5.5em;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.tom3{
+    position: absolute;
+    top: 2.5em;
+    right: 1.5em;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.tom4{
+    position: absolute;
+    top: 11.5em;
+    right: 6em;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: black;
+}

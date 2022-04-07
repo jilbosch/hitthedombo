@@ -48,7 +48,7 @@ header{
 }
 .text_container{
     position: relative;
-    top: 40vh; /*mediaquery*/
+    top: 15vh; /*mediaquery*/
     padding-left: 5vw;
 }
 .title{
@@ -60,7 +60,7 @@ header{
 .subtitle{
     font-weight: bold;
     color: rgb(79, 75, 105);
-    margin: 3% 0%;
+    margin: 5% 0%;
 }
 
 .font{
@@ -109,40 +109,35 @@ a{
 /*BOTONS*/
 .boto_central {
     border: 1px solid #01f488;
-    padding: 10px 50px;
+    padding: 1.5vh 3.5vw;
     background-color: #01f488;
     color: rgb(255, 253, 253);
     text-decoration: none;
-    text-transform:capitalize;
+    text-transform: capitalize;
     border-radius: 50px;
-    
+    font-size: medium;
+    transition: all 1s;   
 }
 .boto_central:hover {
-    border: 1px solid pink;
-    padding: 12px 55px;
-    background-color: pink;
-    color: rgb(255, 253, 253);
-    text-decoration: none;
-    text-transform:capitalize;
-    border-radius: 50px; 
+    /* border: 1px solid pink; */
+    background-color: white;
+    color: black;
 }
 .boto_baix {
     border: 1px solid #ffffff;
-    padding: 10px 30px;
+    padding: 1.5vh 1.5vw;
     background-color: #fbfbfb;
     color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-transform:uppercase;
+    text-transform: uppercase;
     border-radius: 50px;
+    font-weight: bold;
+    font-size: small;
+    transition: all 1s;
 }
 .boto_baix:hover {
-    border: 1px solid blue;
-    padding: 12px 33px;
-    background-color: blue ;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-transform:uppercase;
-    border-radius: 50px;
+    /* border: 1px solid lightslategray; */
+    background-color: #01f488 ;
+    color: white;
 }
 .temporal{
     position: absolute;
@@ -250,7 +245,7 @@ a{
 
 .footer-content h2{
     width: max-content;
-    font-size: 2em;
+    font-size: 1.48em;
     color: white;
     margin: 0;
 }

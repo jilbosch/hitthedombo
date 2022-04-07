@@ -21,3 +21,37 @@ tom3.src = "../sounds-hit-Domboom/tom3.wav";
 
 var tom4 = new Audio();
 tom4.src = "../sounds-hit-Domboom/tom4.wav";
+
+
+//MODIFICACIÓ DEL DOM
+
+// //Crear variables del contenidor i del botó
+// let newViewContainer = document.getElementsByClassName('wrapper')[0];
+// let actionButton = document.getElementsByClassName('boto_central')[0];
+
+//Crear i aplicar funció al click
+
+// //Manera 1
+// function erase(){
+//     newViewContainer.innerHTML="";
+// }
+// actionButton.addEventListener('click', erase);
+
+// //Manera 2
+// //Funció fletxa
+// actionButton.onclick = function(){
+//     newViewContainer.innerHTML="";
+// }
+// //o
+// //Funció
+// actionButton.onclick = ()=>{
+//     newViewContainer.innerHTML="";
+// }
+
+// //Manera 3
+// actionButton.addEventListener('click', function (){
+//     newViewContainer.innerHTML="";
+// })
+// actionButton.addEventListener('click', ()=>{
+//     newViewContainer.innerHTML="";
+// })

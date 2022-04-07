@@ -55,7 +55,6 @@ header{
     font-weight: 500;
     color: rgb(254, 254, 254);
     font-size: 50px; /*mediaquery*/
-    padding-right: 35%;  /*mediaquery?*/
 }
 .subtitle{
     font-weight: bold;
@@ -145,6 +144,10 @@ a{
     left: 50vw;
 }
 /*IMG*/
+.img_bateria{
+    width: 100%;
+}
+
 .bombo{
     position: absolute;
     top: 7em;

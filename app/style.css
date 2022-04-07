@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
 body,
 html {
     position: fixed;
@@ -16,13 +15,18 @@ html {
     margin: 0;
 }
 /*FLEX BOX*/
-.wrapper {
-    height: 100%;
+.wrapper_background{
     width: 100%;
+    height: 100%;
     background: rgb(25, 19, 57);
     background: -moz-radial-gradient(center, rgb(19, 75, 112) 0%, rgb(8, 32, 48) 100%);
     background: -webkit-radial-gradient(center, rgb(19, 75, 112) 0%, rgb(8, 32, 48) 100%);
     background: radial-gradient(ellipse at center, rgb(25, 19, 57) 0%, rgb(1, 0, 32) 100%);
+}
+.wrapper {
+    width: 85%; /*aquí*/
+    height: 100vh;
+    margin: 0 auto;
     display: flex;
     flex-direction: column; /*mediaquery*/
 }
@@ -40,16 +44,22 @@ header{
     height: 70%;
 }
 .row_2{
-    height: 20%;
+    height: 20%; /*aqui*/
 }
-
-.img_container, .text_container{
-    width: 100%;    
+.void_container{
+    width: 0%; /*aquí*/
 }
 .text_container{
     position: relative;
     top: 15vh; /*mediaquery*/
-    padding-left: 5vw;
+    /* padding-left: 5vw; */
+    width: 30%;
+}
+.img_container{
+    width: 70%;
+    background-image: url(../assets/drumkit.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .title{
     font-weight: 500;
@@ -80,17 +90,17 @@ header{
     margin: auto;
 } */
 .logo {
-    padding: 2vh 5vw;
+    padding: 2vh 0vw; /*aquí*/
 }
 .navbar {
     width: 100%;
-    padding: 2vh 12vw;
+    padding: 2vh 6vw;
     text-align: right
 }
 .navbar_grid{
     display: flex;
     justify-content: space-between;
-    width: 50%; /*mediaquery*/
+    width: 60%; /*mediaquery*/
     float: right;
 }
 .navbar_item {
@@ -144,6 +154,26 @@ a{
     left: 50vw;
 }
 /*IMG*/
+.img_row{
+    display: flex;
+    flex-direction: row;
+    border: solid white;
+    height: 27%;
+}
+.img_col{
+    width: 12.5%;
+    border: solid white;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.img_col_big{
+    width: 25%;
+    border: solid white;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
 .img_bateria{
     width: 100%;
 }

@@ -32,18 +32,24 @@ html {
     padding-left: 5vw;
 }
 .title{
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: rgb(254, 254, 254);
     font-size: 50px;
     padding-right: 35%;
 }
 .subtitle{
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: rgb(79, 75, 105);
     margin: 3% 0%;
 }
+
+.font{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
 .line{
     border: 1px solid white;
 }
@@ -59,7 +65,6 @@ html {
     color: rgb(255, 253, 253);
     text-decoration: none;
     text-transform:capitalize;
-    font-family:'Varela Round', sans-serif;
     border-radius: 50px;
     
 }
@@ -70,7 +75,6 @@ html {
     color: rgb(255, 253, 253);
     text-decoration: none;
     text-transform:capitalize;
-    font-family:'Varela Round', sans-serif;
      border-radius: 50px; 
 }
 .boto_baix {
@@ -80,7 +84,6 @@ html {
     color: rgb(0, 0, 0);
     text-decoration: none;
     text-transform:uppercase;
-    font-family:'Varela Round', sans-serif;
     border-radius: 50px;
 }
 .boto_baix:hover {
@@ -90,7 +93,6 @@ html {
     color: rgb(0, 0, 0);
     text-decoration: none;
     text-transform:uppercase;
-    font-family:'Varela Round', sans-serif;
     border-radius: 50px;
 }
 .temporal{
@@ -177,6 +179,40 @@ html {
     border-radius: 50%;
     background-color: black;
 }
+
+/*FOOTER*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: auto;
+    bottom: 0;
+    padding: 40px 723px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer-content h2{
+    width: max-content;
+    font-size: 2em;
+    color: white;
+    margin: 0;
+}
+
+.footer-content p{
+    color: #BDB6B6;
+    margin: 1% auto;
+    margin-bottom: 5%;
+}
+
+
 /*PROVA MEDIA QUERY*/
 @media only screen and (max-width: 600px) {
     .wrapper{

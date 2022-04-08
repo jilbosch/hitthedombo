@@ -154,107 +154,59 @@ a{
     left: 50vw;
 }
 /*IMG*/
-.img_row{
-    display: flex;
-    flex-direction: row;
-    border: solid white;
-    height: 27%;
-}
-.img_col{
-    width: 12.5%;
-    border: solid white;
-    color: white;
-    font-size: 50px;
-    text-align: center;
-}
-.img_col_big{
-    width: 25%;
-    border: solid white;
-    color: white;
-    font-size: 50px;
-    text-align: center;
-}
 .img_bateria{
     width: 100%;
 }
+.big_button{
+    position: absolute;
+    height: 29%;
+    width: 20%;
+    border-radius: 50%;
+    background-color: #01f488;
+}
 
 .bombo{
-    position: absolute;
-    top: 7em;
-    left: 16.5em;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background-color: black;
+    top: 16%;
+    left: 28%;
 }
 
 .crash{
-    position: absolute;
-    top: 7em;
-    right: 17em;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background-color: black;
+    top: 16%;
+    right: 28.5%;
 }
 
 .hit-hat{
-    position: absolute;
-    bottom: 7.5em;
-    left: 9.5em;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background-color: black;
+    top: 52%;
+    left: 16%;
 }
 
 .redoblante{
-    position: absolute;
-    bottom: 7.5em;
-    right: 9.5em;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background-color: black;
+    top: 52%;
+    right: 16%;
 }
-
+.little_button{
+    position: absolute;
+    height: 21%;
+    width: 15%;
+    border-radius: 50%;
+    background-color: #01f488;
+}
 .tom1{
-    position: absolute;
-    top: 2.5em;
-    left: 1em;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    background-color: black;
+    top: 6%;
+    left: 2%;
 }
-
 .tom2{
-    position: absolute;
-    top: 11.5em;
-    left: 5.5em;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    background-color: black;
+    top: 29%;
+    left: 9.5%;
 }
 
 .tom3{
-    position: absolute;
-    top: 2.5em;
-    right: 1.5em;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    background-color: black;
+    top: 6%;
+    right: 3%;
 }
 .tom4{
-    position: absolute;
-    top: 11.5em;
-    right: 6em;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    background-color: black;
+    top: 29%;
+    right: 10.5%;
 }
 
 /*FOOTER*/

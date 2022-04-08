@@ -288,7 +288,9 @@ a{
     margin: 1% auto;
     margin-bottom: 5%;
 }
-
+.patata{
+    color: white;
+}
 
 /*PROVA MEDIA QUERY*/
 @media only screen and (max-width: 600px) {

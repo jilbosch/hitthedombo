@@ -25,17 +25,25 @@ tom4.src = "../sounds-hit-Domboom/tom4.wav";
 
 //MODIFICACIÓ DEL DOM
 
-// //Crear variables del contenidor i del botó
-// let newViewContainer = document.getElementsByClassName('wrapper')[0];
-// let actionButton = document.getElementsByClassName('boto_central')[0];
+//Crear variables del contenidor i del botó
+let newViewContainer = document.getElementsByClassName('wrapper')[0];
+let actionButton = document.getElementsByClassName('boto_central')[0];
 
 //Crear i aplicar funció al click
 
-// //Manera 1
-// function erase(){
-//     newViewContainer.innerHTML="";
-// }
-// actionButton.addEventListener('click', erase);
+//Manera 1
+function erase() {
+    newViewContainer.innerHTML = "";
+    let patata = document.createElement('p');
+    patata.innerText = 'patata';
+    patata.setAttribute("class", "patata");
+    newViewContainer.appendChild(patata);
+}
+
+actionButton.addEventListener('click', erase);
+
+
+
 
 // //Manera 2
 // //Funció fletxa

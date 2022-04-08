@@ -171,17 +171,17 @@ a{
 }
 
 .crash{
-    top: 27%;
-    right: 29%;
+    top: 16%;
+    right: 28.5%;
 }
 
 .hit-hat{
-    top: 89%;
+    top: 52%;
     left: 16%;
 }
 
 .redoblante{
-    top: 89%;
+    top: 52%;
     right: 16%;
 }
 .little_button{
@@ -196,32 +196,17 @@ a{
     left: 2%;
 }
 .tom2{
-    position: absolute;
-    top: 47%;
-    left: 5.5em;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    background-color: black;
+    top: 29%;
+    left: 9.5%;
 }
 
 .tom3{
-    position: absolute;
-    top: 10%;
-    right: 2%;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    background-color: black;
+    top: 6%;
+    right: 3%;
 }
 .tom4{
-    position: absolute;
-    top: 47%;
-    right: 6em;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    background-color: black;
+    top: 29%;
+    right: 10.5%;
 }
 
 /*FOOTER*/

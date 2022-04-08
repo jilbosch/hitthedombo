@@ -57,9 +57,9 @@ header{
 }
 .img_container{
     width: 70%;
-    background-image: url(../assets/drumkit.png);
+    /* background-image: url(../assets/drumkit.png);
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 .title{
     font-weight: 500;

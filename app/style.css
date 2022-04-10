@@ -25,12 +25,13 @@ html {
 }
 .wrapper {
     width: 85%; /*aquí*/
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column; /*mediaquery*/
+    /* margin: 0 auto 0 11%; */
 }
-.row_1, .row_2{
+.row_1, .row_2, .row_3{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -41,30 +42,37 @@ header{
     flex-direction: row;
 }
 .row_1{
-    height: 70%;
+    height: 60%;
 }
 .row_2{
-    height: 20%; /*aqui*/
+    height: 25%; /*aqui*/
+    align-items: end; /*aqui*/
 }
-.void_container{
-    width: 0%; /*aquí*/
+.row_3{
+    height: 5%;
+}
+.text_justify{
+    display: block;
+    float: right;
 }
 .text_container{
     position: relative;
-    top: 15vh; /*mediaquery*/
+    top: 18%; /*mediaquery*/
     /* padding-left: 5vw; */
     width: 30%;
 }
 .img_container{
     width: 70%;
-    /* background-image: url(../assets/drumkit.png);
-    background-size: contain;
-    background-repeat: no-repeat; */
+    top: 5%;
+    position: relative
 }
+/* .void_container{
+    width: 15%;
+} */
 .title{
     font-weight: 500;
     color: rgb(254, 254, 254);
-    font-size: 50px; /*mediaquery*/
+    font-size: 3.5em; /*mediaquery*/
 }
 .subtitle{
     font-weight: bold;
@@ -80,8 +88,12 @@ header{
     border: 1px solid white;
 } */
 .button-container{
-    display: inline-block;
     position: relative;
+    width: 80%;
+    margin:0 auto;
+    top: 5vh;
+    max-height: 400px;
+    max-width: 579px;
 }
 /*HEADER*/
 /* .caixa_interior{
@@ -156,6 +168,9 @@ a{
 /*IMG*/
 .img_bateria{
     width: 100%;
+    margin: 0 auto;
+    max-height: 400px;
+    max-width: 579px;
 }
 .big_button{
     position: absolute;

@@ -73,20 +73,29 @@ function displayView2(components) {
     });
 }
 
-actionButton.onclick = () => {
-    displayView2(componentsClassName);
-    if (view == 'view2') {
-        let domboButton = document.getElementById('dombo_button');
-        domboButton.onclick = (() => {
-            let sound = sounds[Math.floor(Math.random() * sounds.length)];
-            sound.play();
-        })
-        let backButton = document.getElementById('back_button');
-        backButton.onclick = (() => {
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log(window.innerWidth);
+    if(window.innerWidth <= 820){
+        actionButton.onclick = () => {
+            displayView2(componentsClassName);
+            if (view == 'view2') {
+                let domboButton = document.getElementById('dombo_button');
+                domboButton.onclick = (() => {
+                    let sound = sounds[Math.floor(Math.random() * sounds.length)];
+                    sound.play();
+                })
+                let backButton = document.getElementById('back_button');
+                backButton.onclick = (() => {
+                    location.reload();
+                })
+            } else {
+                console.log('Something went wrong');
+            }
+        }
+    }else{
+        actionButton.onclick = (()=>{
             location.reload();
         })
-    } else {
-        console.log('Something went wrong');
     }
-}
-
+});

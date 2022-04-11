@@ -160,6 +160,7 @@ html {
     border-radius: 50px;
     font-size: medium;
     transition: all 1s;
+    cursor: pointer;
 }
 
 .boto_central:hover {
@@ -177,6 +178,7 @@ html {
     font-weight: bold;
     font-size: small;
     transition: all 1s;
+    cursor: pointer;
 }
 
 .boto_baix:hover {
@@ -302,6 +304,7 @@ html {
     color: rgb(58, 58, 58);
     font-size: 2em;
 }
+/*Botó mobile*/
 
 /*MEDIA QUERIES*/
 /*Media Query pantalla petita*/

@@ -76,6 +76,7 @@ function displayView2(components) {
 
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log(window.innerWidth);
+    console.log(window.innerHeight)
     if(window.innerWidth <= 820){
         actionButton.onclick = () => {
             displayView2(componentsClassName);

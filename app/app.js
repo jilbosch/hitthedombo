@@ -1,7 +1,9 @@
-//Displayed view
+//FLAGS
 let view = 'view1';
+let burgerOpened = false;
 
-//Play
+
+//PLAY
 var bombo = new Audio();
 bombo.src = "../sounds-hit-Domboom/bombo (1).wav";
 
@@ -28,12 +30,90 @@ tom4.src = "../sounds-hit-Domboom/tom4.wav";
 
 let sounds = [bombo, crash, hit, redoblante, tom1, tom2, tom3, tom4];
 
-//View Mobile 2
+//GLOBAL
 let wrapper = document.getElementsByClassName('wrapper')[0];
 let actionButton = document.getElementsByClassName('boto_central')[0];
+
+//BURGER BUTTON
+//VARS
+let burgerButton = document.getElementById('burgerButton');
+let burgerButtonContainer = document.getElementsByName('buttonContainer')[0];
+let burgerButtonBar = document.getElementsByClassName('burgerButton_bar');
+let burgonButtonDisplay = document.getElementById('burgerButton_display');
+
+//FUNCTION
+function burgerBarDisplay(boolean) {
+    for (let i = 0; i < burgerButtonBar.length; i++) {
+        let bar = burgerButtonBar[i];
+        if (boolean == false) {
+            bar.setAttribute('style', 'display: none');
+        } else {
+            bar.removeAttribute('style', 'display: none');
+            if(i === 1){
+                bar.setAttribute('style', 'width: 35%');
+            }else{
+
+            }
+        }
+    }
+}
+
+//EVENT
+burgerButton.onclick = (() => {
+    if (burgerOpened === false) {
+        burgerOpened = true;
+        // console.log(burgerOpened);
+        burgerButton.classList.remove('burgerButtonClosed');
+        burgerButton.classList.add('burgerButtonOpened');
+
+        let burgerItemsContainer = document.createElement('div');
+        burgerItemsContainer.id = 'burgerItems_container';
+        burgerItemsContainer.classList.add('burgerItems_container');
+
+        burgerBarDisplay(false);
+
+        let burgerButtonComponents = ['Premium', 'Help', 'Dowload', 'Sign up', 'Log in'];
+
+        burgerButtonComponents.forEach((component) => {
+            let element = document.createElement('div');
+            setTimeout(() => {
+                element.setAttribute('class', 'burgerButton_item font');
+                element.innerText = component;
+
+                if (component === 'Premium') {
+                    element.setAttribute('style', 'border-top: none');
+                } else if (component === 'Sign up') {
+                    element.setAttribute('style', 'color:green');
+                } else {
+
+                }
+
+                burgerItemsContainer.appendChild(element);
+                burgerButton.appendChild(burgerItemsContainer);
+
+            }, 500)
+
+        })
+    } else {
+        burgerOpened = false;
+        // console.log(burgerOpened)
+
+        let burgerItemsContainer = document.getElementById('burgerItems_container');
+        burgerItemsContainer.remove();
+
+        burgerButton.classList.remove('burgerButtonOpened');
+        burgerButton.classList.add('burgerButtonClosed');
+
+        burgerBarDisplay(true);
+    }
+
+})
+
+//VIEW 2 MOBILE
 let componentsClassName = ['header', 'row_1', 'row_2', 'row_3'];
 
 function displayView2(components) {
+    burgonButtonDisplay.setAttribute('style', 'display:none');
     let backButton = document.createElement('p');
     backButton.innerHTML = `<i class="fa-solid fa-arrow-left"></i>`;
     backButton.setAttribute('class', 'back_button');
@@ -73,11 +153,11 @@ function displayView2(components) {
     });
 }
 
-
+//ENABLE FUNCTIONS
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log(window.innerWidth);
     console.log(window.innerHeight)
-    if(window.innerWidth <= 820){
+    if (window.innerWidth <= 820) {
         actionButton.onclick = () => {
             displayView2(componentsClassName);
             if (view == 'view2') {
@@ -94,8 +174,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 console.log('Something went wrong');
             }
         }
-    }else{
-        actionButton.onclick = (()=>{
+    } else {
+        actionButton.onclick = (() => {
             location.reload();
         })
     }

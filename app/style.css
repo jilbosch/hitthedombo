@@ -338,7 +338,7 @@ html {
     width: 50%;
     background-color: white;
     height: 2px;
-    margin: 2% 20% 2% 2%;
+    margin: 2% 25% 2% 2%;
 }
 .burgerButton_display{
     display: none;
@@ -347,15 +347,20 @@ html {
     font-size: .85em;
     color: white;
     border-top: 1px solid white;
-    height: 45%;
+    height: 75%;
     font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+.burgerButton_item:hover, .burgerButton_item:focus{
+    color: rgb(58, 58, 58);
 }
 .burgerItems_container{
     width: 75%;
     text-align: center;
+    align-items: end;
     height: 90%;
     display: flex;
     flex-direction: column;

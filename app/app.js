@@ -37,26 +37,9 @@ let actionButton = document.getElementsByClassName('boto_central')[0];
 //BURGER BUTTON
 //VARS
 let burgerButton = document.getElementById('burgerButton');
-let burgerButtonContainer = document.getElementsByName('buttonContainer')[0];
-let burgerButtonBar = document.getElementsByClassName('burgerButton_bar');
-let burgonButtonDisplay = document.getElementById('burgerButton_display');
+let burgerButtonContainer = document.getElementsByClassName('burgerItems_container')[0];
 
-//FUNCTION
-function burgerBarDisplay(boolean) {
-    for (let i = 0; i < burgerButtonBar.length; i++) {
-        let bar = burgerButtonBar[i];
-        if (boolean == false) {
-            bar.setAttribute('style', 'display: none');
-        } else {
-            bar.removeAttribute('style', 'display: none');
-            if(i === 1){
-                bar.setAttribute('style', 'width: 35%');
-            }else{
-
-            }
-        }
-    }
-}
+let burgerButtonDisplay = document.getElementById('burgerButton_display');
 
 //EVENT
 burgerButton.onclick = (() => {
@@ -66,11 +49,8 @@ burgerButton.onclick = (() => {
         burgerButton.classList.remove('burgerButtonClosed');
         burgerButton.classList.add('burgerButtonOpened');
 
-        let burgerItemsContainer = document.createElement('div');
-        burgerItemsContainer.id = 'burgerItems_container';
-        burgerItemsContainer.classList.add('burgerItems_container');
-
-        burgerBarDisplay(false);
+        burgerButtonContainer.innerHTML = "";
+        burgerButtonContainer.setAttribute('style', 'align-items: center;');
 
         let burgerButtonComponents = ['Premium', 'Help', 'Dowload', 'Sign up', 'Log in'];
 
@@ -81,30 +61,35 @@ burgerButton.onclick = (() => {
                 element.innerText = component;
 
                 if (component === 'Premium') {
-                    element.setAttribute('style', 'border-top: none');
+                    element.setAttribute('style', 'border-top: none;');
                 } else if (component === 'Sign up') {
-                    element.setAttribute('style', 'color:green');
+                    element.setAttribute('style', 'color:green;');
                 } else {
 
                 }
 
-                burgerItemsContainer.appendChild(element);
-                burgerButton.appendChild(burgerItemsContainer);
+                burgerButtonContainer.appendChild(element);
 
             }, 500)
 
         })
     } else {
         burgerOpened = false;
-        // console.log(burgerOpened)
 
-        let burgerItemsContainer = document.getElementById('burgerItems_container');
-        burgerItemsContainer.remove();
+        burgerButtonContainer.innerHTML = "";
+
+        for (let i = 0; i <= 2; i++) {
+            let bar = document.createElement('div');
+            bar.classList.add('burgerButton_bar');
+
+            if (i === 1) { bar.setAttribute('style', 'width: 35%;') } else { }
+
+            burgerButtonContainer.appendChild(bar);
+            burgerButtonContainer.setAttribute('style', 'align-items: end');
+        }
 
         burgerButton.classList.remove('burgerButtonOpened');
         burgerButton.classList.add('burgerButtonClosed');
-
-        burgerBarDisplay(true);
     }
 
 })
@@ -113,7 +98,7 @@ burgerButton.onclick = (() => {
 let componentsClassName = ['header', 'row_1', 'row_2', 'row_3'];
 
 function displayView2(components) {
-    burgonButtonDisplay.setAttribute('style', 'display:none');
+    burgerButtonDisplay.setAttribute('style', 'display:none;');
     let backButton = document.createElement('p');
     backButton.innerHTML = `<i class="fa-solid fa-arrow-left"></i>`;
     backButton.setAttribute('class', 'back_button');

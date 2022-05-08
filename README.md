@@ -9,7 +9,7 @@
 ***
 This is our project in which we started using java script. It is a responsive application adapted to both desktop and tablet and mobile
 ### Mockup of figma
-![screenshot] https://imgur.com/HuboFFP
+[screenshot]<blockquote class="imgur-embed-pub" lang="en" data-id="HuboFFP" data-context="false" ><a href="//imgur.com/HuboFFP"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 ## Technologies
 ***
 A list of technologies used within the project:

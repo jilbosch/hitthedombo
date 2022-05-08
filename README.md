@@ -19,7 +19,8 @@ A list of technologies used within the project:
 
 ## Collaboration
 project create for
-    .Agnès
+    
+    git .Agnès
 
     .Eudald
 

@@ -20,7 +20,7 @@ A list of technologies used within the project:
 ## Collaboration
 project create for
     
-    git .Agnès
+    .Agnès
 
     .Eudald
 
